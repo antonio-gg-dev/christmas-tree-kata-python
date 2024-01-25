@@ -9,3 +9,12 @@ class ChristmasTreeTest(unittest.TestCase):
         tree = ChristmasTree()
 
         self.assertEqual(tree.size(0), '|')
+
+    def test_tree_of_size_1(self):
+        tree = ChristmasTree()
+        expected = (
+            "X\n"
+            "|"
+        )
+
+        self.assertEqual(tree.size(1), expected)
