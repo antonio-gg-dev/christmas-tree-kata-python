@@ -7,4 +7,11 @@ class ChristmasTree:
                 "|"
             )
 
+        if size == 2:
+            return (
+                " X\n"
+                "XXX\n"
+                " |"
+            )
+
         return '|'
