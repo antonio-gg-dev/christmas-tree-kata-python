@@ -1,4 +1,4 @@
-DOCKER_NAME=python-kata-setup
+DOCKER_NAME=christmas-tree-kata-python
 
 help: ## Show this help message.
 	@echo 'USAGE: make [target]'
