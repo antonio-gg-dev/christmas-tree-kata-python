@@ -28,3 +28,32 @@ class ChristmasTreeTest(unittest.TestCase):
         )
 
         self.assertEqual(tree.size(2), expected)
+
+    def test_tree_of_size_3(self):
+        tree = ChristmasTree()
+        expected = (
+            "  X\n"
+            " XXX\n"
+            "XXXXX\n"
+            "  |"
+        )
+
+        self.assertEqual(tree.size(3), expected)
+
+    def test_tree_of_size_10(self):
+        tree = ChristmasTree()
+        expected = (
+            "         X\n"
+            "        XXX\n"
+            "       XXXXX\n"
+            "      XXXXXXX\n"
+            "     XXXXXXXXX\n"
+            "    XXXXXXXXXXX\n"
+            "   XXXXXXXXXXXXX\n"
+            "  XXXXXXXXXXXXXXX\n"
+            " XXXXXXXXXXXXXXXXX\n"
+            "XXXXXXXXXXXXXXXXXXX\n"
+            "         |"
+        )
+
+        self.assertEqual(tree.size(10), expected)
